@@ -15,26 +15,44 @@
                 <form id="registration-form" class="mt-5" method="post" enctype="multipart/form-data" action="/ajax/add_form_result.php">
                 <div class="mb-3">
                     <label for="form-name" class="form-label">Имя</label>
-                    <input type="text" name="name" class="form-control" id="form-name">
+                    <input type="text" required name="name" class="form-control" id="form-name">
                 </div>
                 <div class="mb-3">
                     <label for="form-second-name" class="form-label">Фамилия</label>
-                    <input type="text" name="second-name" class="form-control" id="form-second-name">
+                    <input type="text" required name="second-name" class="form-control" id="form-second-name">
                 </div>
                 <div class="mb-3">
                     <label for="form-email" class="form-label">Email</label>
-                    <input type="email" name="email" class="form-control" id="form-email">
+                    <input type="email" required name="email" class="form-control" id="form-email">
                 </div>
                 <div class="mb-3">
                     <label for="form-password" class="form-label">Пароль</label>
-                    <input type="password" name="password" class="form-control" id="form-password">
+                    <input type="password" required name="password" class="form-control" id="form-password">
                 </div>
                 <div class="mb-3">
                     <label for="form-password-confirm" class="form-label">Подтверждение пароля</label>
-                    <input type="password" name="password-confirm" class="form-control" id="form-password-confirm">
+                    <input type="password" required name="password-confirm" class="form-control" id="form-password-confirm">
                 </div>
                 <button type="submit" class="btn btn-primary">Отправить</button>
             </form>
+        </div>
+    </div>
+
+    <div class="modal fade" id="registration-modal-success" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Поздравляем</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Вы успешно зарегестрировались
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
