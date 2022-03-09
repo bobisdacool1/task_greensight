@@ -13,7 +13,7 @@ try {
     $validatorData->email = $_POST["formData"]["email"];
     $validatorData->password = $_POST["formData"]["password"];
     $validatorData->passwordConfirm = $_POST["formData"]["passwordConfirm"];
-} catch (Exception|Error) {
+} catch (Exception|Error) { // не хватает исключений
     json_encode([
         "success" => false,
         "message" => "empty data"
