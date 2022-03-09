@@ -12,26 +12,26 @@
 <div class="container">
     <div class="row d-flex justify-content-center">
         <div class="col-6">
-            <form class="mt-5">
+                <form id="registration-form" class="mt-5" method="post" enctype="multipart/form-data" action="/ajax/add_form_result.php">
                 <div class="mb-3">
                     <label for="form-name" class="form-label">Имя</label>
-                    <input type="text" class="form-control" id="form-name">
+                    <input type="text" name="name" class="form-control" id="form-name">
                 </div>
                 <div class="mb-3">
                     <label for="form-second-name" class="form-label">Фамилия</label>
-                    <input type="text" class="form-control" id="form-second-name">
+                    <input type="text" name="second-name" class="form-control" id="form-second-name">
                 </div>
                 <div class="mb-3">
                     <label for="form-email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="form-email">
+                    <input type="email" name="email" class="form-control" id="form-email">
                 </div>
                 <div class="mb-3">
                     <label for="form-password" class="form-label">Пароль</label>
-                    <input type="password" class="form-control" id="form-password">
+                    <input type="password" name="password" class="form-control" id="form-password">
                 </div>
                 <div class="mb-3">
                     <label for="form-password-confirm" class="form-label">Подтверждение пароля</label>
-                    <input type="password" class="form-control" id="form-password-confirm">
+                    <input type="password" name="password-confirm" class="form-control" id="form-password-confirm">
                 </div>
                 <button type="submit" class="btn btn-primary">Отправить</button>
             </form>
